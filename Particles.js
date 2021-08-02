@@ -14,6 +14,10 @@ display(){
     push();
     translate(pos.x,pos.y);
    rotate(angle);
-   noStroke()
+   noStroke();
+   fill(this.color)
+   ellipseMode(RADIUS);
+   ellipse(0,0,this.r,this.r);
+   pop();
 }
 }
